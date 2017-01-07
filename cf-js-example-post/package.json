@@ -1,0 +1,14 @@
+{
+  "name": "cf-js-example-post",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "express": "3.2.6",
+    "jade": "*",
+    "mongoose": "^4.7.6"
+  }
+}

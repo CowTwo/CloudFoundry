@@ -1,0 +1,634 @@
+Connected, dumping recent logs for app cf-js-example-post in org jashuntest-org / space development as jashunwan01@gmail.com...
+
+2017-01-07T12:56:40.58+0800 [API/5]      OUT Created app with guid 5f27d930-cf28-4b66-9223-75f7342e96fb
+2017-01-07T12:56:45.53+0800 [API/2]      OUT Updated app with guid 5f27d930-cf28-4b66-9223-75f7342e96fb ({"route"=>"98d3e39a-1b0c-4a63-bc1d-3daf4a094261", :verb=>"add", :relation=>"routes", :related_guid=>"98d3e39a-1b0c-4a63-bc1d-3daf4a094261"})
+2017-01-07T12:57:10.76+0800 [API/0]      OUT Updated app with guid 5f27d930-cf28-4b66-9223-75f7342e96fb ({"state"=>"STARTED"})
+2017-01-07T12:57:11.06+0800 [STG/0]      OUT Downloading binary_buildpack...
+2017-01-07T12:57:11.06+0800 [STG/0]      OUT Downloading go_buildpack...
+2017-01-07T12:57:11.06+0800 [STG/0]      OUT Downloading php_buildpack...
+2017-01-07T12:57:11.06+0800 [STG/0]      OUT Downloading nodejs_buildpack...
+2017-01-07T12:57:11.07+0800 [STG/0]      OUT Downloading dotnet_core_buildpack...
+2017-01-07T12:57:11.09+0800 [STG/0]      OUT Downloaded dotnet_core_buildpack
+2017-01-07T12:57:11.09+0800 [STG/0]      OUT Downloading dotnet_core_buildpack_beta...
+2017-01-07T12:57:11.11+0800 [STG/0]      OUT Downloaded nodejs_buildpack
+2017-01-07T12:57:11.11+0800 [STG/0]      OUT Downloading python_buildpack...
+2017-01-07T12:57:11.12+0800 [STG/0]      OUT Downloaded binary_buildpack
+2017-01-07T12:57:11.12+0800 [STG/0]      OUT Downloading java_buildpack...
+2017-01-07T12:57:11.12+0800 [STG/0]      OUT Downloaded go_buildpack
+2017-01-07T12:57:11.12+0800 [STG/0]      OUT Downloading staticfile_buildpack...
+2017-01-07T12:57:11.13+0800 [STG/0]      OUT Downloaded dotnet_core_buildpack_beta
+2017-01-07T12:57:11.13+0800 [STG/0]      OUT Downloading ruby_buildpack...
+2017-01-07T12:57:11.16+0800 [STG/0]      OUT Downloaded java_buildpack
+2017-01-07T12:57:11.16+0800 [STG/0]      OUT Downloaded python_buildpack
+2017-01-07T12:57:11.17+0800 [STG/0]      OUT Downloaded staticfile_buildpack
+2017-01-07T12:57:11.17+0800 [STG/0]      OUT Downloaded ruby_buildpack
+2017-01-07T12:57:11.85+0800 [STG/0]      OUT Downloaded php_buildpack
+2017-01-07T12:57:11.85+0800 [STG/0]      OUT Creating container
+2017-01-07T12:57:13.85+0800 [STG/0]      OUT Successfully created container
+2017-01-07T12:57:13.85+0800 [STG/0]      OUT Downloading app package...
+2017-01-07T12:57:14.17+0800 [STG/0]      OUT Downloaded app package (1.6M)
+2017-01-07T12:57:14.17+0800 [STG/0]      OUT Staging...
+2017-01-07T12:57:14.73+0800 [STG/0]      OUT -------> Buildpack version 1.5.25
+2017-01-07T12:57:14.78+0800 [STG/0]      OUT -----> Creating runtime environment
+2017-01-07T12:57:14.78+0800 [STG/0]      OUT        
+2017-01-07T12:57:14.78+0800 [STG/0]      OUT        NPM_CONFIG_LOGLEVEL=error
+2017-01-07T12:57:14.78+0800 [STG/0]      OUT        NPM_CONFIG_PRODUCTION=true
+2017-01-07T12:57:14.79+0800 [STG/0]      OUT        NODE_ENV=production
+2017-01-07T12:57:14.79+0800 [STG/0]      OUT        NODE_MODULES_CACHE=true
+2017-01-07T12:57:14.79+0800 [STG/0]      OUT -----> Installing binaries
+2017-01-07T12:57:14.79+0800 [STG/0]      OUT        engines.node (package.json):  unspecified
+2017-01-07T12:57:14.79+0800 [STG/0]      OUT        engines.npm (package.json):   unspecified (use default)
+2017-01-07T12:57:14.79+0800 [STG/0]      OUT        
+2017-01-07T12:57:14.99+0800 [STG/0]      OUT        Downloading and installing node 4.7.0...
+2017-01-07T12:57:15.18+0800 [STG/0]      OUT        Downloaded [file:///tmp/buildpacks/742abd67de437dc719a2c666ed6e3df7/dependencies/https___buildpacks.cloudfoundry.org_dependencies_node_node-4.7.0-linux-x64.tgz]
+2017-01-07T12:57:15.77+0800 [STG/0]      OUT        Using default npm version: 2.15.11
+2017-01-07T12:57:15.77+0800 [STG/0]      OUT -----> Restoring cache
+2017-01-07T12:57:16.00+0800 [STG/0]      OUT        Skipping cache restore (new runtime signature)
+2017-01-07T12:57:16.00+0800 [STG/0]      OUT -----> Building dependencies
+2017-01-07T12:57:16.01+0800 [STG/0]      OUT        Prebuild detected (node_modules already exists)
+2017-01-07T12:57:16.01+0800 [STG/0]      OUT        Rebuilding any native modules
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        express@3.2.6 /tmp/app/node_modules/express
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        buffer-crc32@0.2.1 /tmp/app/node_modules/buffer-crc32
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        commander@0.6.1 /tmp/app/node_modules/commander
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        connect@2.7.11 /tmp/app/node_modules/connect
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        bytes@0.2.0 /tmp/app/node_modules/bytes
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        cookie@0.0.5 /tmp/app/node_modules/connect/node_modules/cookie
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        cookie-signature@1.0.1 /tmp/app/node_modules/cookie-signature
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        debug@2.6.0 /tmp/app/node_modules/debug
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        ms@0.7.2 /tmp/app/node_modules/ms
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        formidable@1.0.14 /tmp/app/node_modules/formidable
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        fresh@0.1.0 /tmp/app/node_modules/fresh
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        pause@0.0.1 /tmp/app/node_modules/pause
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        qs@0.6.5 /tmp/app/node_modules/qs
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        send@0.1.1 /tmp/app/node_modules/connect/node_modules/send
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        mime@1.2.11 /tmp/app/node_modules/mime
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        range-parser@0.0.4 /tmp/app/node_modules/range-parser
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        cookie@0.1.0 /tmp/app/node_modules/cookie
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        methods@0.0.1 /tmp/app/node_modules/methods
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        mkdirp@0.3.4 /tmp/app/node_modules/mkdirp
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        send@0.1.0 /tmp/app/node_modules/send
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        mime@1.2.6 /tmp/app/node_modules/send/node_modules/mime
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        jade@1.11.0 /tmp/app/node_modules/jade
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        character-parser@1.2.1 /tmp/app/node_modules/character-parser
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        clean-css@3.4.23 /tmp/app/node_modules/clean-css
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        commander@2.8.1 /tmp/app/node_modules/clean-css/node_modules/commander
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        graceful-readlink@1.0.1 /tmp/app/node_modules/graceful-readlink
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        source-map@0.4.4 /tmp/app/node_modules/source-map
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        amdefine@1.0.1 /tmp/app/node_modules/amdefine
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        commander@2.6.0 /tmp/app/node_modules/jade/node_modules/commander
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        constantinople@3.0.2 /tmp/app/node_modules/constantinople
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        acorn@2.7.0 /tmp/app/node_modules/acorn
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        jstransformer@0.0.2 /tmp/app/node_modules/jstransformer
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        is-promise@2.1.0 /tmp/app/node_modules/is-promise
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        promise@6.1.0 /tmp/app/node_modules/promise
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        asap@1.0.0 /tmp/app/node_modules/asap
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        mkdirp@0.5.1 /tmp/app/node_modules/jade/node_modules/mkdirp
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        minimist@0.0.8 /tmp/app/node_modules/minimist
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        transformers@2.1.0 /tmp/app/node_modules/transformers
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        css@1.0.8 /tmp/app/node_modules/css
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        css-parse@1.0.4 /tmp/app/node_modules/css-parse
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        css-stringify@1.0.5 /tmp/app/node_modules/css-stringify
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        promise@2.0.0 /tmp/app/node_modules/transformers/node_modules/promise
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        is-promise@1.0.1 /tmp/app/node_modules/transformers/node_modules/is-promise
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        uglify-js@2.2.5 /tmp/app/node_modules/transformers/node_modules/uglify-js
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        optimist@0.3.7 /tmp/app/node_modules/optimist
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        wordwrap@0.0.3 /tmp/app/node_modules/wordwrap
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        source-map@0.1.43 /tmp/app/node_modules/transformers/node_modules/source-map
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        uglify-js@2.7.5 /tmp/app/node_modules/uglify-js
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        async@0.2.10 /tmp/app/node_modules/async
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        source-map@0.5.6 /tmp/app/node_modules/uglify-js/node_modules/source-map
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        uglify-to-browserify@1.0.2 /tmp/app/node_modules/uglify-to-browserify
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        yargs@3.10.0 /tmp/app/node_modules/yargs
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        camelcase@1.2.1 /tmp/app/node_modules/camelcase
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        cliui@2.1.0 /tmp/app/node_modules/cliui
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        center-align@0.1.3 /tmp/app/node_modules/center-align
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        align-text@0.1.4 /tmp/app/node_modules/align-text
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        kind-of@3.1.0 /tmp/app/node_modules/kind-of
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        is-buffer@1.1.4 /tmp/app/node_modules/is-buffer
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        longest@1.0.1 /tmp/app/node_modules/longest
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        repeat-string@1.6.1 /tmp/app/node_modules/repeat-string
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        lazy-cache@1.0.4 /tmp/app/node_modules/lazy-cache
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        right-align@0.1.3 /tmp/app/node_modules/right-align
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        wordwrap@0.0.2 /tmp/app/node_modules/cliui/node_modules/wordwrap
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        decamelize@1.2.0 /tmp/app/node_modules/decamelize
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        window-size@0.1.0 /tmp/app/node_modules/window-size
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        void-elements@2.0.1 /tmp/app/node_modules/void-elements
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        with@4.0.3 /tmp/app/node_modules/with
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        acorn@1.2.2 /tmp/app/node_modules/with/node_modules/acorn
+2017-01-07T12:57:17.24+0800 [STG/0]      OUT        acorn-globals@1.0.9 /tmp/app/node_modules/acorn-globals
+2017-01-07T12:57:17.25+0800 [STG/0]      OUT        Installing any new modules (package.json)
+2017-01-07T12:57:18.59+0800 [STG/0]      OUT -----> Caching build
+2017-01-07T12:57:18.60+0800 [STG/0]      OUT        Clearing previous node cache
+2017-01-07T12:57:18.60+0800 [STG/0]      OUT        Saving 2 cacheDirectories (default):
+2017-01-07T12:57:18.60+0800 [STG/0]      OUT        - node_modules
+2017-01-07T12:57:18.71+0800 [STG/0]      OUT        - bower_components (nothing to cache)
+2017-01-07T12:57:18.93+0800 [STG/0]      OUT -----> Build succeeded!
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── acorn@2.7.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── acorn-globals@1.0.9
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── align-text@0.1.4
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── amdefine@1.0.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── asap@1.0.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── async@0.2.10
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── buffer-crc32@0.2.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── bytes@0.2.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── camelcase@1.2.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── center-align@0.1.3
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── character-parser@1.2.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── clean-css@3.4.23
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── cliui@2.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── commander@0.6.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── connect@2.7.11
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── constantinople@3.0.2
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── cookie@0.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── cookie-signature@1.0.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── css@1.0.8
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── css-parse@1.0.4
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── css-stringify@1.0.5
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── debug@2.6.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── decamelize@1.2.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── express@3.2.6
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── formidable@1.0.14
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── fresh@0.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── graceful-readlink@1.0.1 extraneous
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── is-buffer@1.1.4
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── is-promise@2.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── jade@1.11.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── jstransformer@0.0.2
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── kind-of@3.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── lazy-cache@1.0.4
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── longest@1.0.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── methods@0.0.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── mime@1.2.11
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── minimist@0.0.8 extraneous
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── mkdirp@0.3.4
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── ms@0.7.2
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── optimist@0.3.7 extraneous
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── pause@0.0.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── promise@6.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── qs@0.6.5
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── range-parser@0.0.4
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── repeat-string@1.6.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── right-align@0.1.3
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── send@0.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── source-map@0.4.4
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── transformers@2.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── uglify-js@2.7.5
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── uglify-to-browserify@1.0.2
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── void-elements@2.0.1
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── window-size@0.1.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── with@4.0.3
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        ├── wordwrap@0.0.3
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        └── yargs@3.10.0
+2017-01-07T12:57:19.63+0800 [STG/0]      OUT        
+2017-01-07T12:57:22.07+0800 [STG/0]      OUT Exit status 0
+2017-01-07T12:57:22.07+0800 [STG/0]      OUT Staging complete
+2017-01-07T12:57:22.07+0800 [STG/0]      OUT Uploading droplet, build artifacts cache...
+2017-01-07T12:57:22.07+0800 [STG/0]      OUT Uploading droplet...
+2017-01-07T12:57:22.07+0800 [STG/0]      OUT Uploading build artifacts cache...
+2017-01-07T12:57:22.16+0800 [STG/0]      OUT Uploaded build artifacts cache (1.3M)
+2017-01-07T12:57:24.35+0800 [STG/0]      OUT Uploaded droplet (10.6M)
+2017-01-07T12:57:24.35+0800 [STG/0]      OUT Uploading complete
+2017-01-07T12:57:24.57+0800 [STG/0]      OUT Destroying container
+2017-01-07T12:57:25.26+0800 [CELL/0]     OUT Creating container
+2017-01-07T12:57:26.50+0800 [STG/0]      OUT Successfully destroyed container
+2017-01-07T12:57:26.70+0800 [CELL/0]     OUT Successfully created container
+2017-01-07T12:57:28.88+0800 [CELL/0]     OUT Starting health monitoring of container
+2017-01-07T12:57:29.74+0800 [APP/PROC/WEB/0]OUT > cf-js-example-post@0.0.1 start /home/vcap/app
+2017-01-07T12:57:29.74+0800 [APP/PROC/WEB/0]OUT > node app.js
+2017-01-07T12:57:29.94+0800 [APP/PROC/WEB/0]OUT Express server listening on port 8080
+2017-01-07T12:57:30.99+0800 [CELL/0]     OUT Container became healthy
+2017-01-07T12:58:09.58+0800 [RTR/5]      OUT cf-js-example-post-unobverted-megalosaur.cfapps.io - [07/01/2017:04:58:09.200 +0000] "GET / HTTP/1.1" 200 0 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" "10.10.66.143:12886" "10.10.155.56:60090" x_forwarded_for:"61.231.50.70" x_forwarded_proto:"http" vcap_request_id:"9ddb6a37-8ba7-48c6-58b6-f7434430623a" response_time:0.382976487 app_id:"5f27d930-cf28-4b66-9223-75f7342e96fb" app_index:"0" x_b3_traceid:"bb10876f00040bad" x_b3_spanid:"bb10876f00040bad" x_b3_parentspanid:"-"
+2017-01-07T12:58:09.58+0800 [APP/PROC/WEB/0]OUT [90mGET / [32m200 [90m377ms - 170b[0m
+2017-01-07T12:58:09.81+0800 [RTR/3]      OUT cf-js-example-post-unobverted-megalosaur.cfapps.io - [07/01/2017:04:58:09.803 +0000] "GET /stylesheets/style.css HTTP/1.1" 200 0 117 "http://cf-js-example-post-unobverted-megalosaur.cfapps.io/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" "10.10.66.143:35722" "10.10.155.56:60090" x_forwarded_for:"61.231.50.70" x_forwarded_proto:"http" vcap_request_id:"e9abe8aa-56b5-4b12-641f-3cfb8e464168" response_time:0.011232235 app_id:"5f27d930-cf28-4b66-9223-75f7342e96fb" app_index:"0" x_b3_traceid:"bd4955ad8e340f14" x_b3_spanid:"bd4955ad8e340f14" x_b3_parentspanid:"-"
+2017-01-07T12:58:09.81+0800 [APP/PROC/WEB/0]OUT [90mGET /stylesheets/style.css [32m200 [90m8ms - 117b[0m
+2017-01-07T12:58:10.40+0800 [RTR/2]      OUT cf-js-example-post-unobverted-megalosaur.cfapps.io - [07/01/2017:04:58:10.402 +0000] "GET /favicon.ico HTTP/1.1" 200 0 1406 "http://cf-js-example-post-unobverted-megalosaur.cfapps.io/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" "10.10.66.143:26170" "10.10.155.56:60090" x_forwarded_for:"61.231.50.70" x_forwarded_proto:"http" vcap_request_id:"369c3ad7-f985-40b5-78d7-8c16e92dd78f" response_time:0.005322052 app_id:"5f27d930-cf28-4b66-9223-75f7342e96fb" app_index:"0" x_b3_traceid:"d91dcdac72a90675" x_b3_spanid:"d91dcdac72a90675" x_b3_parentspanid:"-"
+2017-01-07T12:58:19.76+0800 [RTR/2]      OUT cf-js-example-post-unobverted-megalosaur.cfapps.io - [07/01/2017:04:58:19.726 +0000] "GET /test HTTP/1.1" 200 0 467 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" "10.10.66.143:26170" "10.10.155.56:60090" x_forwarded_for:"61.231.50.70" x_forwarded_proto:"http" vcap_request_id:"02c3bfda-d449-43f3-74b5-8c589e8e31e4" response_time:0.035600932 app_id:"5f27d930-cf28-4b66-9223-75f7342e96fb" app_index:"0" x_b3_traceid:"443655225d064340" x_b3_spanid:"443655225d064340" x_b3_parentspanid:"-"
+2017-01-07T12:58:19.77+0800 [APP/PROC/WEB/0]OUT [90mGET /test [32m200 [90m33ms - 467b[0m
+2017-01-07T12:58:19.99+0800 [RTR/0]      OUT cf-js-example-post-unobverted-megalosaur.cfapps.io - [07/01/2017:04:58:19.987 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 0 0 "http://cf-js-example-post-unobverted-megalosaur.cfapps.io/test" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" "10.10.66.143:3352" "10.10.155.56:60090" x_forwarded_for:"61.231.50.70" x_forwarded_proto:"http" vcap_request_id:"d46259b3-b14f-4665-5435-35acc1c2df9d" response_time:0.004134831 app_id:"5f27d930-cf28-4b66-9223-75f7342e96fb" app_index:"0" x_b3_traceid:"9e2a9aca8e5bcef3" x_b3_spanid:"9e2a9aca8e5bcef3" x_b3_parentspanid:"-"
+2017-01-07T12:58:19.99+0800 [APP/PROC/WEB/0]OUT [90mGET /stylesheets/style.css [36m304 [90m2ms[0m
+2017-01-07T12:58:38.98+0800 [RTR/4]      OUT cf-js-example-post-unobverted-megalosaur.cfapps.io - [07/01/2017:04:58:38.974 +0000] "POST /test HTTP/1.1" 200 40 51 "http://cf-js-example-post-unobverted-megalosaur.cfapps.io/test" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" "10.10.66.143:45129" "10.10.155.56:60090" x_forwarded_for:"61.231.50.70" x_forwarded_proto:"http" vcap_request_id:"07f720bc-d8a3-4da7-51f2-c99c6652afcd" response_time:0.006637408 app_id:"5f27d930-cf28-4b66-9223-75f7342e96fb" app_index:"0" x_b3_traceid:"4c90e7317b789173" x_b3_spanid:"4c90e7317b789173" x_b3_parentspanid:"-"
+2017-01-07T12:58:39.00+0800 [APP/PROC/WEB/0]OUT js wan
+2017-01-07T12:58:39.00+0800 [APP/PROC/WEB/0]OUT JaShun Wan Test
+2017-01-07T12:58:39.00+0800 [APP/PROC/WEB/0]OUT [90mPOST /test [32m200 [90m4ms - 51b[0m
+2017-01-07T13:42:37.07+0800 [API/2]      OUT Updated app with guid 5f27d930-cf28-4b66-9223-75f7342e96fb ({"name"=>"cf-js-example-post", "instances"=>1, "memory"=>512, "environment_json"=>"PRIVATE DATA HIDDEN"})
+2017-01-07T13:43:20.73+0800 [CELL/0]     OUT Exit status 0
+2017-01-07T13:43:20.74+0800 [API/2]      OUT Updated app with guid 5f27d930-cf28-4b66-9223-75f7342e96fb ({"state"=>"STOPPED"})
+2017-01-07T13:43:23.69+0800 [API/7]      OUT Updated app with guid 5f27d930-cf28-4b66-9223-75f7342e96fb ({"state"=>"STARTED"})
+2017-01-07T13:43:24.06+0800 [STG/0]      OUT Downloading binary_buildpack...
+2017-01-07T13:43:24.06+0800 [STG/0]      OUT Downloading ruby_buildpack...
+2017-01-07T13:43:24.06+0800 [STG/0]      OUT Downloading java_buildpack...
+2017-01-07T13:43:24.06+0800 [STG/0]      OUT Downloading nodejs_buildpack...
+2017-01-07T13:43:24.06+0800 [STG/0]      OUT Downloading staticfile_buildpack...
+2017-01-07T13:43:24.12+0800 [STG/0]      OUT Downloaded ruby_buildpack
+2017-01-07T13:43:24.12+0800 [STG/0]      OUT Downloading php_buildpack...
+2017-01-07T13:43:24.12+0800 [STG/0]      OUT Downloaded nodejs_buildpack
+2017-01-07T13:43:24.12+0800 [STG/0]      OUT Downloading go_buildpack...
+2017-01-07T13:43:24.13+0800 [STG/0]      OUT Downloaded staticfile_buildpack
+2017-01-07T13:43:24.13+0800 [STG/0]      OUT Downloading python_buildpack...
+2017-01-07T13:43:24.15+0800 [STG/0]      OUT Downloaded java_buildpack
+2017-01-07T13:43:24.15+0800 [STG/0]      OUT Downloading dotnet_core_buildpack...
+2017-01-07T13:43:24.17+0800 [STG/0]      OUT Downloaded go_buildpack
+2017-01-07T13:43:24.17+0800 [STG/0]      OUT Downloading dotnet_core_buildpack_beta...
+2017-01-07T13:43:24.17+0800 [STG/0]      OUT Downloaded python_buildpack
+2017-01-07T13:43:24.20+0800 [STG/0]      OUT Downloaded dotnet_core_buildpack_beta
+2017-01-07T13:43:24.20+0800 [STG/0]      OUT Downloaded dotnet_core_buildpack
+2017-01-07T13:43:24.30+0800 [STG/0]      OUT Downloaded php_buildpack
+2017-01-07T13:43:24.32+0800 [STG/0]      OUT Downloaded binary_buildpack
+2017-01-07T13:43:24.32+0800 [STG/0]      OUT Creating container
+2017-01-07T13:43:25.27+0800 [STG/0]      OUT Successfully created container
+2017-01-07T13:43:25.27+0800 [STG/0]      OUT Downloading app package...
+2017-01-07T13:43:25.87+0800 [STG/0]      OUT Downloaded app package (3.8M)
+2017-01-07T13:43:25.87+0800 [STG/0]      OUT Downloading build artifacts cache...
+2017-01-07T13:43:27.05+0800 [STG/0]      OUT Downloaded build artifacts cache (1.3M)
+2017-01-07T13:43:27.05+0800 [STG/0]      OUT Staging...
+2017-01-07T13:43:27.70+0800 [STG/0]      OUT -------> Buildpack version 1.5.25
+2017-01-07T13:43:27.74+0800 [STG/0]      OUT -----> Creating runtime environment
+2017-01-07T13:43:27.75+0800 [STG/0]      OUT        
+2017-01-07T13:43:27.75+0800 [STG/0]      OUT        NPM_CONFIG_LOGLEVEL=error
+2017-01-07T13:43:27.75+0800 [STG/0]      OUT        NPM_CONFIG_PRODUCTION=true
+2017-01-07T13:43:27.75+0800 [STG/0]      OUT        NODE_ENV=production
+2017-01-07T13:43:27.75+0800 [STG/0]      OUT        NODE_MODULES_CACHE=true
+2017-01-07T13:43:27.75+0800 [STG/0]      OUT -----> Installing binaries
+2017-01-07T13:43:27.76+0800 [STG/0]      OUT        engines.node (package.json):  unspecified
+2017-01-07T13:43:27.76+0800 [STG/0]      OUT        engines.npm (package.json):   unspecified (use default)
+2017-01-07T13:43:27.76+0800 [STG/0]      OUT        
+2017-01-07T13:43:28.00+0800 [STG/0]      OUT        Downloading and installing node 4.7.0...
+2017-01-07T13:43:28.19+0800 [STG/0]      OUT        Downloaded [file:///tmp/buildpacks/742abd67de437dc719a2c666ed6e3df7/dependencies/https___buildpacks.cloudfoundry.org_dependencies_node_node-4.7.0-linux-x64.tgz]
+2017-01-07T13:43:28.83+0800 [STG/0]      OUT        Using default npm version: 2.15.11
+2017-01-07T13:43:28.83+0800 [STG/0]      OUT -----> Restoring cache
+2017-01-07T13:43:29.10+0800 [STG/0]      OUT        Loading 2 from cacheDirectories (default):
+2017-01-07T13:43:29.10+0800 [STG/0]      OUT        - node_modules (exists - skipping)
+2017-01-07T13:43:29.10+0800 [STG/0]      OUT        - bower_components (not cached - skipping)
+2017-01-07T13:43:29.10+0800 [STG/0]      OUT -----> Building dependencies
+2017-01-07T13:43:29.10+0800 [STG/0]      OUT        Prebuild detected (node_modules already exists)
+2017-01-07T13:43:29.10+0800 [STG/0]      OUT        Rebuilding any native modules
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        cfenv@1.0.3 /tmp/app/node_modules/cfenv
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        js-yaml@3.4.6 /tmp/app/node_modules/js-yaml
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        argparse@1.0.9 /tmp/app/node_modules/argparse
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        sprintf-js@1.0.3 /tmp/app/node_modules/sprintf-js
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        esprima@2.7.3 /tmp/app/node_modules/esprima
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        inherit@2.2.6 /tmp/app/node_modules/inherit
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        ports@1.1.0 /tmp/app/node_modules/ports
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        underscore@1.8.3 /tmp/app/node_modules/underscore
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        express@3.2.6 /tmp/app/node_modules/express
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        buffer-crc32@0.2.1 /tmp/app/node_modules/buffer-crc32
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        commander@0.6.1 /tmp/app/node_modules/commander
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        connect@2.7.11 /tmp/app/node_modules/connect
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        bytes@0.2.0 /tmp/app/node_modules/bytes
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        cookie@0.0.5 /tmp/app/node_modules/connect/node_modules/cookie
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        cookie-signature@1.0.1 /tmp/app/node_modules/cookie-signature
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        debug@2.6.0 /tmp/app/node_modules/debug
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        ms@0.7.2 /tmp/app/node_modules/ms
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        formidable@1.0.14 /tmp/app/node_modules/formidable
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        fresh@0.1.0 /tmp/app/node_modules/fresh
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        pause@0.0.1 /tmp/app/node_modules/pause
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        qs@0.6.5 /tmp/app/node_modules/qs
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        send@0.1.1 /tmp/app/node_modules/connect/node_modules/send
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        mime@1.2.11 /tmp/app/node_modules/mime
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        range-parser@0.0.4 /tmp/app/node_modules/range-parser
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        cookie@0.1.0 /tmp/app/node_modules/cookie
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        methods@0.0.1 /tmp/app/node_modules/methods
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        mkdirp@0.3.4 /tmp/app/node_modules/mkdirp
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        send@0.1.0 /tmp/app/node_modules/send
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        mime@1.2.6 /tmp/app/node_modules/send/node_modules/mime
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        jade@1.11.0 /tmp/app/node_modules/jade
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        character-parser@1.2.1 /tmp/app/node_modules/character-parser
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        clean-css@3.4.23 /tmp/app/node_modules/clean-css
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        commander@2.8.1 /tmp/app/node_modules/clean-css/node_modules/commander
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        graceful-readlink@1.0.1 /tmp/app/node_modules/graceful-readlink
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        source-map@0.4.4 /tmp/app/node_modules/source-map
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        amdefine@1.0.1 /tmp/app/node_modules/amdefine
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        commander@2.6.0 /tmp/app/node_modules/jade/node_modules/commander
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        constantinople@3.0.2 /tmp/app/node_modules/constantinople
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        acorn@2.7.0 /tmp/app/node_modules/acorn
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        jstransformer@0.0.2 /tmp/app/node_modules/jstransformer
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        is-promise@2.1.0 /tmp/app/node_modules/is-promise
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        promise@6.1.0 /tmp/app/node_modules/promise
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        asap@1.0.0 /tmp/app/node_modules/asap
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        mkdirp@0.5.1 /tmp/app/node_modules/jade/node_modules/mkdirp
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        minimist@0.0.8 /tmp/app/node_modules/minimist
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        transformers@2.1.0 /tmp/app/node_modules/transformers
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        css@1.0.8 /tmp/app/node_modules/css
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        css-parse@1.0.4 /tmp/app/node_modules/css-parse
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        css-stringify@1.0.5 /tmp/app/node_modules/css-stringify
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        promise@2.0.0 /tmp/app/node_modules/transformers/node_modules/promise
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        is-promise@1.0.1 /tmp/app/node_modules/transformers/node_modules/is-promise
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        uglify-js@2.2.5 /tmp/app/node_modules/transformers/node_modules/uglify-js
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        optimist@0.3.7 /tmp/app/node_modules/optimist
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        wordwrap@0.0.3 /tmp/app/node_modules/wordwrap
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        source-map@0.1.43 /tmp/app/node_modules/transformers/node_modules/source-map
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        uglify-js@2.7.5 /tmp/app/node_modules/uglify-js
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        async@0.2.10 /tmp/app/node_modules/async
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        source-map@0.5.6 /tmp/app/node_modules/uglify-js/node_modules/source-map
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        uglify-to-browserify@1.0.2 /tmp/app/node_modules/uglify-to-browserify
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        yargs@3.10.0 /tmp/app/node_modules/yargs
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        camelcase@1.2.1 /tmp/app/node_modules/camelcase
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        cliui@2.1.0 /tmp/app/node_modules/cliui
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        center-align@0.1.3 /tmp/app/node_modules/center-align
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        align-text@0.1.4 /tmp/app/node_modules/align-text
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        kind-of@3.1.0 /tmp/app/node_modules/kind-of
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        is-buffer@1.1.4 /tmp/app/node_modules/is-buffer
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        longest@1.0.1 /tmp/app/node_modules/longest
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        repeat-string@1.6.1 /tmp/app/node_modules/repeat-string
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        lazy-cache@1.0.4 /tmp/app/node_modules/lazy-cache
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        right-align@0.1.3 /tmp/app/node_modules/right-align
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        wordwrap@0.0.2 /tmp/app/node_modules/cliui/node_modules/wordwrap
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        decamelize@1.2.0 /tmp/app/node_modules/decamelize
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        window-size@0.1.0 /tmp/app/node_modules/window-size
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        void-elements@2.0.1 /tmp/app/node_modules/void-elements
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        with@4.0.3 /tmp/app/node_modules/with
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        acorn@1.2.2 /tmp/app/node_modules/with/node_modules/acorn
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        acorn-globals@1.0.9 /tmp/app/node_modules/acorn-globals
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        mongoose@4.7.6 /tmp/app/node_modules/mongoose
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        async@2.1.4 /tmp/app/node_modules/mongoose/node_modules/async
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        lodash@4.17.4 /tmp/app/node_modules/lodash
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        bson@1.0.3 /tmp/app/node_modules/bson
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        hooks-fixed@1.2.0 /tmp/app/node_modules/hooks-fixed
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        kareem@1.2.0 /tmp/app/node_modules/kareem
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        mongodb@2.2.16 /tmp/app/node_modules/mongodb
+2017-01-07T13:43:31.02+0800 [STG/0]      OUT        es6-promise@3.2.1 /tmp/app/node_modules/es6-promise
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        mongodb-core@2.1.2 /tmp/app/node_modules/mongodb-core
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        require_optional@1.0.0 /tmp/app/node_modules/require_optional
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        resolve-from@2.0.0 /tmp/app/node_modules/resolve-from
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        semver@5.3.0 /tmp/app/node_modules/semver
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        readable-stream@2.1.5 /tmp/app/node_modules/readable-stream
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        buffer-shims@1.0.0 /tmp/app/node_modules/buffer-shims
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        core-util-is@1.0.2 /tmp/app/node_modules/core-util-is
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        inherits@2.0.3 /tmp/app/node_modules/inherits
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        isarray@1.0.0 /tmp/app/node_modules/isarray
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        process-nextick-args@1.0.7 /tmp/app/node_modules/process-nextick-args
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        string_decoder@0.10.31 /tmp/app/node_modules/string_decoder
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        util-deprecate@1.0.2 /tmp/app/node_modules/util-deprecate
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        mpath@0.2.1 /tmp/app/node_modules/mpath
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        mpromise@0.5.5 /tmp/app/node_modules/mpromise
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        mquery@2.0.0 /tmp/app/node_modules/mquery
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        bluebird@2.10.2 /tmp/app/node_modules/bluebird
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        debug@2.2.0 /tmp/app/node_modules/mquery/node_modules/debug
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        ms@0.7.1 /tmp/app/node_modules/mquery/node_modules/ms
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        regexp-clone@0.0.1 /tmp/app/node_modules/regexp-clone
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        sliced@0.0.5 /tmp/app/node_modules/mquery/node_modules/sliced
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        muri@1.1.1 /tmp/app/node_modules/muri
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        sliced@1.0.1 /tmp/app/node_modules/sliced
+2017-01-07T13:43:31.03+0800 [STG/0]      OUT        Installing any new modules (package.json)
+2017-01-07T13:43:31.75+0800 [CELL/0]     OUT Destroying container
+2017-01-07T13:43:32.88+0800 [STG/0]      OUT -----> Caching build
+2017-01-07T13:43:32.89+0800 [STG/0]      OUT        Clearing previous node cache
+2017-01-07T13:43:32.92+0800 [CELL/0]     OUT Successfully destroyed container
+2017-01-07T13:43:32.94+0800 [STG/0]      OUT        Saving 2 cacheDirectories (default):
+2017-01-07T13:43:32.94+0800 [STG/0]      OUT        - node_modules
+2017-01-07T13:43:33.36+0800 [STG/0]      OUT        - bower_components (nothing to cache)
+2017-01-07T13:43:33.58+0800 [STG/0]      OUT -----> Build succeeded!
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── acorn@2.7.0
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── acorn-globals@1.0.9
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── align-text@0.1.4
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── amdefine@1.0.1
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── argparse@1.0.9
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── asap@1.0.0
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── async@0.2.10
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── bluebird@2.10.2
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── bson@1.0.3
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── buffer-crc32@0.2.1
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── buffer-shims@1.0.0
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── bytes@0.2.0
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── camelcase@1.2.1
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── center-align@0.1.3
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── cfenv@1.0.3
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── character-parser@1.2.1
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── clean-css@3.4.23
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── cliui@2.1.0
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── commander@0.6.1
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── connect@2.7.11
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── constantinople@3.0.2
+2017-01-07T13:43:34.38+0800 [STG/0]      OUT        ├── cookie@0.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── cookie-signature@1.0.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── core-util-is@1.0.2
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── css@1.0.8
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── css-parse@1.0.4
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── css-stringify@1.0.5
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── debug@2.6.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── decamelize@1.2.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── es6-promise@3.2.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── esprima@2.7.3
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── express@3.2.6
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── formidable@1.0.14
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── fresh@0.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── graceful-readlink@1.0.1 extraneous
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── hooks-fixed@1.2.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── inherit@2.2.6
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── inherits@2.0.3
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── is-buffer@1.1.4
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── is-promise@2.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── isarray@1.0.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── jade@1.11.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── js-yaml@3.4.6
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── jstransformer@0.0.2
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── kareem@1.2.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── kind-of@3.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── lazy-cache@1.0.4
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── lodash@4.17.4 extraneous
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── longest@1.0.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── methods@0.0.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── mime@1.2.11
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── minimist@0.0.8 extraneous
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── mkdirp@0.3.4
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── mongodb@2.2.16
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── mongodb-core@2.1.2
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── mongoose@4.7.6
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── mpath@0.2.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── mpromise@0.5.5
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── mquery@2.0.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── ms@0.7.2
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── muri@1.1.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── optimist@0.3.7 extraneous
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── pause@0.0.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── ports@1.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── process-nextick-args@1.0.7
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── promise@6.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── qs@0.6.5
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── range-parser@0.0.4
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── readable-stream@2.1.5
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── regexp-clone@0.0.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── repeat-string@1.6.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── require_optional@1.0.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── resolve-from@2.0.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── right-align@0.1.3
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── semver@5.3.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── send@0.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── sliced@1.0.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── source-map@0.4.4
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── sprintf-js@1.0.3
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── string_decoder@0.10.31
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── transformers@2.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── uglify-js@2.7.5
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── uglify-to-browserify@1.0.2
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── underscore@1.8.3
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── util-deprecate@1.0.2
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── void-elements@2.0.1
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── window-size@0.1.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── with@4.0.3
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        ├── wordwrap@0.0.3
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        └── yargs@3.10.0
+2017-01-07T13:43:34.39+0800 [STG/0]      OUT        
+2017-01-07T13:43:38.70+0800 [STG/0]      OUT Exit status 0
+2017-01-07T13:43:38.70+0800 [STG/0]      OUT Staging complete
+2017-01-07T13:43:38.70+0800 [STG/0]      OUT Uploading droplet, build artifacts cache...
+2017-01-07T13:43:38.70+0800 [STG/0]      OUT Uploading build artifacts cache...
+2017-01-07T13:43:38.70+0800 [STG/0]      OUT Uploading droplet...
+2017-01-07T13:43:38.81+0800 [STG/0]      OUT Uploaded build artifacts cache (2.8M)
+2017-01-07T13:43:43.00+0800 [STG/0]      OUT Uploaded droplet (12.2M)
+2017-01-07T13:43:43.00+0800 [STG/0]      OUT Uploading complete
+2017-01-07T13:43:43.04+0800 [STG/0]      OUT Destroying container
+2017-01-07T13:43:43.84+0800 [CELL/0]     OUT Creating container
+2017-01-07T13:43:44.44+0800 [STG/0]      OUT Successfully destroyed container
+2017-01-07T13:43:45.20+0800 [CELL/0]     OUT Successfully created container
+2017-01-07T13:43:47.93+0800 [CELL/0]     OUT Starting health monitoring of container
+2017-01-07T13:43:48.58+0800 [APP/PROC/WEB/0]OUT > cf-js-example-post@0.0.1 start /home/vcap/app
+2017-01-07T13:43:48.58+0800 [APP/PROC/WEB/0]OUT > node app.js
+2017-01-07T13:43:49.26+0800 [APP/PROC/WEB/0]OUT Express server listening on port 8080
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR /home/vcap/app/node_modules/mongodb/lib/server.js:265
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR         process.nextTick(function() { throw err; })
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR                                       ^
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR MongoError: failed to connect to server [localhost:27017] on first connect
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at null.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/topologies/server.js:325:35)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at emitOne (events.js:77:13)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at emit (events.js:169:7)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at null.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/connection/pool.js:270:12)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at g (events.js:260:16)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at emitTwo (events.js:87:13)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at emit (events.js:172:7)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at Socket.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/connection/connection.js:173:49)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at Socket.g (events.js:260:16)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at emitOne (events.js:77:13)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at Socket.emit (events.js:169:7)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at emitErrorNT (net.js:1269:8)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at nextTickCallbackWith2Args (node.js:458:9)
+2017-01-07T13:43:49.27+0800 [APP/PROC/WEB/0]ERR     at process._tickCallback (node.js:372:17)
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! Linux 4.4.0-53-generic
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! argv "/home/vcap/app/.heroku/node/bin/node" "/home/vcap/app/.heroku/node/bin/npm" "start"
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! node v4.7.0
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! npm  v2.15.11
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! code ELIFECYCLE
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! cf-js-example-post@0.0.1 start: `node app.js`
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! Exit status 1
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! 
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! Failed at the cf-js-example-post@0.0.1 start script 'node app.js'.
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! This is most likely a problem with the cf-js-example-post package,
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! not with npm itself.
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! Tell the author that this fails on your system:
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR!     node app.js
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! You can get information on how to open an issue for this project with:
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR!     npm bugs cf-js-example-post
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! Or if that isn't available, you can get their info via:
+2017-01-07T13:43:49.28+0800 [APP/PROC/WEB/0]ERR npm ERR! 
+2017-01-07T13:43:49.29+0800 [APP/PROC/WEB/0]ERR npm ERR!     npm owner ls cf-js-example-post
+2017-01-07T13:43:49.29+0800 [APP/PROC/WEB/0]ERR npm ERR! There is likely additional logging output above.
+2017-01-07T13:43:49.29+0800 [APP/PROC/WEB/0]ERR npm ERR! Please include the following file with any support request:
+2017-01-07T13:43:49.29+0800 [APP/PROC/WEB/0]ERR npm ERR!     /home/vcap/app/npm-debug.log
+2017-01-07T13:43:49.29+0800 [APP/PROC/WEB/0]OUT Exit status 1
+2017-01-07T13:43:49.31+0800 [CELL/0]     OUT Exit status 0
+2017-01-07T13:43:49.33+0800 [CELL/0]     OUT Destroying container
+2017-01-07T13:43:49.33+0800 [API/4]      OUT Process has crashed with type: "web"
+2017-01-07T13:43:49.35+0800 [API/4]      OUT App instance exited with guid 5f27d930-cf28-4b66-9223-75f7342e96fb payload: {"instance"=>"", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>1, "crash_timestamp"=>1483767829325481617, "version"=>"9a587916-d287-4503-a4d7-23317eccdd94"}
+2017-01-07T13:43:49.70+0800 [CELL/0]     OUT Creating container
+2017-01-07T13:43:50.78+0800 [CELL/0]     OUT Successfully destroyed container
+2017-01-07T13:43:51.02+0800 [CELL/0]     OUT Successfully created container
+2017-01-07T13:43:52.47+0800 [CELL/0]     OUT Starting health monitoring of container
+2017-01-07T13:43:53.51+0800 [APP/PROC/WEB/0]OUT > cf-js-example-post@0.0.1 start /home/vcap/app
+2017-01-07T13:43:53.51+0800 [APP/PROC/WEB/0]OUT > node app.js
+2017-01-07T13:43:54.33+0800 [APP/PROC/WEB/0]OUT Express server listening on port 8080
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR /home/vcap/app/node_modules/mongodb/lib/server.js:265
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR         process.nextTick(function() { throw err; })
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR                                       ^
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR MongoError: failed to connect to server [localhost:27017] on first connect
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at null.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/topologies/server.js:325:35)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at emitOne (events.js:77:13)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at emit (events.js:169:7)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at null.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/connection/pool.js:270:12)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at g (events.js:260:16)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at emitTwo (events.js:87:13)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at emit (events.js:172:7)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at Socket.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/connection/connection.js:173:49)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at Socket.g (events.js:260:16)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at emitOne (events.js:77:13)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at Socket.emit (events.js:169:7)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at emitErrorNT (net.js:1269:8)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at nextTickCallbackWith2Args (node.js:458:9)
+2017-01-07T13:43:54.34+0800 [APP/PROC/WEB/0]ERR     at process._tickCallback (node.js:372:17)
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! Linux 4.4.0-53-generic
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! argv "/home/vcap/app/.heroku/node/bin/node" "/home/vcap/app/.heroku/node/bin/npm" "start"
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! node v4.7.0
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! npm  v2.15.11
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! code ELIFECYCLE
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! cf-js-example-post@0.0.1 start: `node app.js`
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! Exit status 1
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! 
+2017-01-07T13:43:54.35+0800 [APP/PROC/WEB/0]ERR npm ERR! Failed at the cf-js-example-post@0.0.1 start script 'node app.js'.
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR! This is most likely a problem with the cf-js-example-post package,
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR! not with npm itself.
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR! Tell the author that this fails on your system:
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR!     node app.js
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR! You can get information on how to open an issue for this project with:
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR!     npm bugs cf-js-example-post
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR! Or if that isn't available, you can get their info via:
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR! 
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR!     npm owner ls cf-js-example-post
+2017-01-07T13:43:54.36+0800 [APP/PROC/WEB/0]ERR npm ERR! There is likely additional logging output above.
+2017-01-07T13:43:54.37+0800 [APP/PROC/WEB/0]ERR npm ERR! Please include the following file with any support request:
+2017-01-07T13:43:54.37+0800 [APP/PROC/WEB/0]ERR npm ERR!     /home/vcap/app/npm-debug.log
+2017-01-07T13:43:54.38+0800 [APP/PROC/WEB/0]OUT Exit status 1
+2017-01-07T13:43:54.41+0800 [CELL/0]     OUT Exit status 0
+2017-01-07T13:43:54.43+0800 [CELL/0]     OUT Destroying container
+2017-01-07T13:43:54.45+0800 [API/4]      OUT Process has crashed with type: "web"
+2017-01-07T13:43:54.46+0800 [API/4]      OUT App instance exited with guid 5f27d930-cf28-4b66-9223-75f7342e96fb payload: {"instance"=>"", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>2, "crash_timestamp"=>1483767834426292172, "version"=>"9a587916-d287-4503-a4d7-23317eccdd94"}
+2017-01-07T13:43:54.76+0800 [CELL/0]     OUT Creating container
+2017-01-07T13:43:56.20+0800 [CELL/0]     OUT Successfully destroyed container
+2017-01-07T13:43:56.70+0800 [CELL/0]     OUT Successfully created container
+2017-01-07T13:43:58.70+0800 [CELL/0]     OUT Starting health monitoring of container
+2017-01-07T13:43:59.58+0800 [APP/PROC/WEB/0]OUT > cf-js-example-post@0.0.1 start /home/vcap/app
+2017-01-07T13:43:59.58+0800 [APP/PROC/WEB/0]OUT > node app.js
+2017-01-07T13:44:00.23+0800 [APP/PROC/WEB/0]OUT Express server listening on port 8080
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR /home/vcap/app/node_modules/mongodb/lib/server.js:265
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR         process.nextTick(function() { throw err; })
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR                                       ^
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR MongoError: failed to connect to server [localhost:27017] on first connect
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at null.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/topologies/server.js:325:35)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at emitOne (events.js:77:13)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at emit (events.js:169:7)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at null.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/connection/pool.js:270:12)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at g (events.js:260:16)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at emitTwo (events.js:87:13)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at emit (events.js:172:7)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at Socket.<anonymous> (/home/vcap/app/node_modules/mongodb-core/lib/connection/connection.js:173:49)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at Socket.g (events.js:260:16)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at emitOne (events.js:77:13)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at Socket.emit (events.js:169:7)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at emitErrorNT (net.js:1269:8)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at nextTickCallbackWith2Args (node.js:458:9)
+2017-01-07T13:44:00.24+0800 [APP/PROC/WEB/0]ERR     at process._tickCallback (node.js:372:17)
+2017-01-07T13:44:00.26+0800 [APP/PROC/WEB/0]ERR npm ERR! Linux 4.4.0-53-generic
+2017-01-07T13:44:00.26+0800 [APP/PROC/WEB/0]ERR npm ERR! argv "/home/vcap/app/.heroku/node/bin/node" "/home/vcap/app/.heroku/node/bin/npm" "start"
+2017-01-07T13:44:00.26+0800 [APP/PROC/WEB/0]ERR npm ERR! node v4.7.0
+2017-01-07T13:44:00.26+0800 [APP/PROC/WEB/0]ERR npm ERR! npm  v2.15.11
+2017-01-07T13:44:00.26+0800 [APP/PROC/WEB/0]ERR npm ERR! code ELIFECYCLE
+2017-01-07T13:44:00.26+0800 [APP/PROC/WEB/0]ERR npm ERR! cf-js-example-post@0.0.1 start: `node app.js`
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! Exit status 1
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! 
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! Failed at the cf-js-example-post@0.0.1 start script 'node app.js'.
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! This is most likely a problem with the cf-js-example-post package,
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! not with npm itself.
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! Tell the author that this fails on your system:
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR!     node app.js
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! You can get information on how to open an issue for this project with:
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR!     npm bugs cf-js-example-post
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! Or if that isn't available, you can get their info via:
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! 
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR!     npm owner ls cf-js-example-post
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! There is likely additional logging output above.
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR! Please include the following file with any support request:
+2017-01-07T13:44:00.27+0800 [APP/PROC/WEB/0]ERR npm ERR!     /home/vcap/app/npm-debug.log
+2017-01-07T13:44:00.28+0800 [APP/PROC/WEB/0]OUT Exit status 1
+2017-01-07T13:44:00.30+0800 [CELL/0]     OUT Exit status 0
+2017-01-07T13:44:00.32+0800 [CELL/0]     OUT Destroying container
+2017-01-07T13:44:00.33+0800 [API/0]      OUT Process has crashed with type: "web"
+2017-01-07T13:44:00.34+0800 [API/0]      OUT App instance exited with guid 5f27d930-cf28-4b66-9223-75f7342e96fb payload: {"instance"=>"", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>3, "crash_timestamp"=>1483767840313081415, "version"=>"9a587916-d287-4503-a4d7-23317eccdd94"}
+2017-01-07T13:44:02.23+0800 [CELL/0]     OUT Successfully destroyed container

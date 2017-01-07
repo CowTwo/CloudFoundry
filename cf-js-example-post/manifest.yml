@@ -1,0 +1,8 @@
+---
+applications:
+- name: cf-js-example-post
+  memory: 512M
+  instances: 1
+  random-route: true
+  services:
+  - my-mongo-database
