@@ -1,6 +1,0 @@
----
-applications:
-- name: my-first-ide-test
-  memory: 512M
-  instances: 1
-  random-route: true

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;cf-js-web-scraping&apos; to &apos;cf-js-example-web-scraping&apos;" description="Rename resource &apos;cf-js-web-scraping&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/cf-js-web-scraping" name="cf-js-example-web-scraping" stamp="1484355006956" updateReferences="true"/>
+</session>

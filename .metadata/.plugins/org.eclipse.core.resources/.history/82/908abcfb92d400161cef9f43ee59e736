@@ -1,5 +1,0 @@
-
-
-exports.send_form = function(req, res){
-	res.render('testform', { title: 'TestForm' });
-};

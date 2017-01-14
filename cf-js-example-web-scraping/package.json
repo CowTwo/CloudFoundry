@@ -1,0 +1,14 @@
+{
+  "name": "cf-js-web-scraping",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "express": "3.2.6",
+    "jade": "*",
+    "request": "^2.79.0"
+  }
+}

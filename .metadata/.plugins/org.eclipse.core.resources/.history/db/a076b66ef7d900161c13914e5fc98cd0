@@ -1,0 +1,60 @@
+
+/**
+ * Module dependencies.
+ */
+
+var express = require('express')
+  , routes = require('./routes')
+  , user = require('./routes/user')
+  , http = require('http')
+  , request = require("request")
+  , cheerio = require("cheerio")
+  , path = require('path');
+
+var app = express();
+//台南市的氣溫
+var url = "http://www.wunderground.com/weather-forecast/zmw:00000.1.59358";
+
+// all environments
+app.set('port', process.env.PORT || 3000);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+app.use(express.favicon());
+app.use(express.logger('dev'));
+app.use(express.bodyParser());
+app.use(express.methodOverride());
+app.use(app.router);
+app.use(express.static(path.join(__dirname, 'public')));
+
+// development only
+if ('development' == app.get('env')) {
+  app.use(express.errorHandler());
+}
+
+app.get('/', routes.index);
+app.get('/users', user.list);
+app.get('/test', function(req, res){
+	// 取得網頁資料
+	request(url, function (error, response, body) {
+	  if (!error) {
+
+	    // 用 cheerio 解析 html 資料
+	    var $ = cheerio.load(body);
+
+	    // 篩選有興趣的資料
+	    var temperature = $("[data-variable='temperature'] .wx-value").html();
+	    var humidity = $("[data-variable='humidity'] .wx-value").html();
+
+	    // 輸出
+	    console.log("氣溫：攝氏 " + temperature + " 度");
+	    console.log("濕度：" + humidity + "%");
+
+	  } else {
+	    console.log("擷取錯誤：" + error);
+	  }
+	});	
+});
+
+http.createServer(app).listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
+});

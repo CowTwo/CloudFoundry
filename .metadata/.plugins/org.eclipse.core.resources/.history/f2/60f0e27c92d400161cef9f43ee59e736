@@ -1,5 +1,0 @@
-
-
-exports.form = function(req, res){
-	res.render('testform', { title: 'TestForm' });
-};
