@@ -45,36 +45,18 @@ var issueSchema = mongoose.Schema({
 });
 var Issue = mongoose.model("Issue", issueSchema);
 
+
 app.get('/', routes.index);
 app.get('/users', user.list);
-app.get('/test', test.send_form);
-app.post('/test', function(req, res){
-    var issueInfo = req.body; //Get the parsed information
-    if(!issueInfo.title || !issueInfo.description){
-        res.send("Sorry, you provided worng info!");
-    }
-    else{	
-        var newIssue = new Issue({ 
-            title: issueInfo.title,
-            description: issueInfo.description
-        });
-        newIssue.save(function(err, res_db){
-            if(err){
-                res.send("TestDB Error /!");
-            }
-            else{
-                res.send("TestDB OK /!");
-            }
-        });
-		
-    }	
+
+app.get('/test1', test.send_form);
+app.post('/test1', function(req, res){
+	test.process_post(req, res, Issue);
+});
+app.get('/query1', function(req, res){
+	test.process_query(req, res, Issue);
 });
 
-app.get('/query', function(req, res){
-    Issue.find(function(err, res_db){
-        res.json(res_db);
-    });
-});
 
 app.get('/debug', function(req, res){
     res.send("mongoLabUrl="+mongoLabUrl+",  appEnv="+appEnv);	
